@@ -30,12 +30,12 @@
 
   <body>
     <!-- Top Announcement Bar (scrolls away) -->
-    <div class="bg-[#FF4D00]">
+    <!-- <div class="bg-[#FF4D00]">
       <div class="container mx-auto text-center text-white text-sm py-2">Fast Oil Changes, Featuring Valvoline Engine Oil</div>
-    </div>
+    </div> -->
 
     <!-- Secondary Navigation (scrolls away) -->
-    <div class="bg-white">
+    <div class="bg-black text-white">
       <div class="container mx-auto flex items-center justify-between py-3 px-4 text-sm">
         <!-- Left Links with Vertical Dividers -->
         <div class="flex items-center space-x-5">
@@ -77,12 +77,13 @@
       </div>
     </div>
 
+    <!-- Promotional Bar (also scrolls away) -->
+    <div class="bg-[#004990]">
+      <div class="container mx-auto text-white text-center py-2 font-semibold text-sm">Drop in any time. No appointment needed.</div>
+    </div>
+
     <!-- Main Navigation (sticky when scrolled to) -->
-    <nav class="border-b-[3px] border-[#FF4D00] sticky top-0 bg-white z-50">
-      <!-- Promotional Bar (also scrolls away) -->
-      <div class="bg-[#004990] border-b-[2px] border-t-[2px] border-[#FF4D00]">
-        <div class="container mx-auto text-white text-center py-2 font-semibold text-sm">Drop in any time. No appointment needed.</div>
-      </div>
+    <nav class="border-b-[2px] border-[#FF4D00] sticky top-0 bg-white z-50 shadow-xl">
       <div class="container mx-auto flex items-center justify-between py-4 px-4">
         <!-- Logo / Brand Name -->
         <div class="bg-[#FF4D00] px-3 rounded-xl">
@@ -105,6 +106,53 @@
       </div>
     </nav>
 
+    <section class="relative h-[70vh] w-full" style="background-image: url('images/hero-bg-new.jpg'); background-size: cover; background-position: center">
+      <div class="absolute inset-0"></div>
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-l from-black to-transparent opacity-80"></div>
+      <div class="relative z-10 flex items-center h-full">
+        <div class="container mx-auto px-8 flex justify-end">
+          <div class="text-right text-white max-w-xl" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="text-5xl font-bold mb-4">
+              Welcome to <br />
+              Valvoline Express Care
+            </h1>
+            <p class="mb-6 text-xl">Experience fast oil changes and premium automotive services at our state-of-the-art facility.</p>
+            <div data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+              <a href="#" class="inline-block bg-[#FF4D00] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#004990] transition duration-300 text-xl">
+                VISIT US TODAY
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Banner -->
+    <section class="bg-[#F5F5F5]">
+      <div class="mx-auto">
+        <img src="images/hero-banner.jpg" alt="Hero Banner" class="w-full h-auto" />
+      </div>
+    </section>
+
+    <section class="bg-[#1c1c1c] text-white flex items-center justify-center py-20">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-6 lg:space-y-0 lg:space-x-12">
+        <!-- Left Content: Logo -->
+        <div class="flex-shrink-0">
+          <img src="images/valvoline-150.png" alt="Valvoline 150 Years Logo" class="w-[300px]" />
+        </div>
+
+        <!-- Right Content: Text -->
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Fast Oil Changes, Featuring</h2>
+          <h1 class="text-4xl font-bold mb-4 italic">Valvoline Engine Oil</h1>
+          <div class="h-1 w-[80px] bg-[#FF4D00] mb-3"></div>
+          <p class="text-base text-gray-300 leading-relaxed max-w-xl">
+            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- "Find Valvoline + Tires Near You" Section -->
     <section class="bg-[#F5F5F5] py-16">
       <div
@@ -112,30 +160,20 @@
         data-aos="fade-up"
         data-aos-duration="1000"
       >
+        <!-- Right Content: Button -->
+        <div class="mt-4 md:mt-0">
+          <a href="#" class="inline-block bg-[#FF4D00] text-white font-bold py-5 px-10 rounded-xl text-2xl hover:bg-[#004990] transition duration-300">
+            VISIT US TODAY
+          </a>
+        </div>
         <!-- Left Content: Heading + Subtext -->
-        <div class="text-right">
+        <div class="text-left">
           <h2 class="text-xl md:text-2xl font-bold text-[#004990]">Visit Valvoline + Tires Near You</h2>
           <p class="text-sm md:text-base text-gray-700 mt-2">
             We have hundreds of locations across Toronto ready <br />
             to serve all your vehicle needs.
           </p>
         </div>
-        <!-- Right Content: Button -->
-        <div class="mt-4 md:mt-0">
-          <a
-            href="#"
-            class="inline-block bg-[#FF4D00] text-white border-[4px] border-[#004990] font-bold py-5 px-10 rounded-xl text-2xl hover:bg-[#004990] transition duration-300"
-          >
-            VISIT US TODAY
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hero Banner -->
-    <section class="bg-[#F5F5F5] pb-16">
-      <div class="container mx-auto">
-        <img src="images/hero-banner.jpg" alt="Hero Banner" class="w-full h-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" />
       </div>
     </section>
 
@@ -245,19 +283,26 @@
     </section>
 
     <!-- Decorative Divider with Droplet (Optional) -->
-    <div class="container mx-auto py-10">
+    <!-- <div class="container mx-auto py-10">
       <div class="flex justify-center items-center">
         <div class="w-full h-[2px] bg-[#FF4D00]"></div>
-        <i class="fas fa-tint text-[#004990] mx-4 text-xl"></i>
+        <i class="fas fa-tint text-[#004990] mx-4 text-xl"></i> 
         <div class="w-full h-[2px] bg-[#FF4D00]"></div>
       </div>
-    </div>
+    </div> -->
+
+    <img src="images/oil-change-banner.jpg" alt="" class="w-full h-auto" />
 
     <!-- Keeping Canada Running Since 1866 Section -->
-    <section class="py-16 bg-white">
+    <section class="py-32 bg-white">
       <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <!-- Right Column: Image -->
+        <div class="md:w-1/2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <img src="images/about-img.jpg" alt="" class="w-full h-auto" />
+        </div>
+
         <!-- Left Column: Text -->
-        <div class="md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+        <div class="md:w-1/2 md:pl-10 pl-0" data-aos="fade-right" data-aos-duration="1000">
           <h2 class="text-3xl font-bold mb-4">Keeping Canada Running Since 1866</h2>
           <p class="text-gray-700 mb-4">
             We hope you'll enjoy our new location as much as we do. We here at Express Care Scarborough believe our customers are the most important part of our
@@ -270,17 +315,21 @@
             on the cutting edge of our industry by using computer diagnostic equipment and new auto repair techniques to ensure our customers receive the best
             possible service.
           </p>
-          <a
-            href="#"
-            class="inline-block bg-[#FF4D00] text-white border-[4px] border-[#004990] font-bold py-3 px-10 rounded-xl text-lg mt-5 hover:bg-[#004990] transition duration-300"
-          >
+          <a href="#" class="inline-block bg-[#FF4D00] text-white font-bold py-3 px-10 rounded-xl text-lg mt-5 hover:bg-[#004990] transition duration-300">
             LEARN MORE
           </a>
         </div>
+      </div>
+    </section>
 
-        <!-- Right Column: Image -->
-        <div class="md:w-1/2 md:pl-16" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-          <img src="images/about-img.jpg" alt="" class="w-full h-auto" />
+    <section class="text-white bg-[#FF4D00] p-2">
+      <div class="bg-[#1c1c1c] rounded-2xl pt-16 pb-24">
+        <div class="container mx-auto text-center">
+          <h2 class="text-5xl font-semibold mb-3">Tires Matched Exactly to Your Vehicle</h2>
+          <p class="text-base font-light mb-12 max-w-2xl mx-auto">
+            We hope you'll enjoy our new location as much as we do. We here at Express Care Scarborough believe our customers are the most.
+          </p>
+          <a href="#" class="bg-[#FF4D00] text-white font-bold text-xl py-6 px-20 rounded-2xl transition">BOOK AN APPOINTMENT</a>
         </div>
       </div>
     </section>
@@ -315,7 +364,33 @@
       </div>
     </section>
 
-    <section class="py-16">
+    <!-- Three-Column Section: Store Locator, Valvoline + Tires Club, Foundation -->
+    <section class="bg-[#1c1c1c] py-16 border-b-[1px] border-[#fff]">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center">
+        <!-- Column 1: Store Locator -->
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <i class="fas fa-store text-4xl text-[#FF4D00]"></i>
+          <h3 class="text-xl font-bold mt-2">Store Locator</h3>
+          <p class="mt-2">Find Valvoline Tires near you.</p>
+        </div>
+
+        <!-- Column 2: Valvoline + Tires Club -->
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <i class="fas fa-gem text-4xl text-[#FF4D00]"></i>
+          <h3 class="text-xl font-bold mt-2">Valvoline + Tires Club</h3>
+          <p class="mt-2">Join the Valvoline club to gain exclusive rewards and discounts.</p>
+        </div>
+
+        <!-- Column 3: Valvoline + Tires Foundation -->
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+          <i class="fas fa-heart text-4xl text-[#FF4D00]"></i>
+          <h3 class="text-xl font-bold mt-2">Valvoline + Tires Foundation</h3>
+          <p class="mt-2">Help us through your donations to our charitable causes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10">
       <div class="container mx-auto px-4 flex flex-col items-center md:flex-row md:justify-center md:items-center md:space-x-8">
         <!-- Left Content: Heading + Subtext -->
         <div class="text-right">
@@ -323,44 +398,15 @@
         </div>
         <!-- Right Content: Button -->
         <div class="mt-4 md:mt-0">
-          <a
-            href="#"
-            class="inline-block bg-[#FF4D00] text-white border-[4px] border-[#004990] font-bold py-4 px-10 rounded-xl text-xl hover:bg-[#004990] transition duration-300"
-          >
+          <a href="#" class="inline-block bg-[#FF4D00] text-white font-bold py-4 px-10 rounded-xl text-xl hover:bg-[#004990] transition duration-300">
             SEND US A MESSAGE
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Three-Column Section: Store Locator, Valvoline + Tires Club, Foundation -->
-    <section class="bg-[#333333] py-16 border-b-[3px] border-[#FF4D00]">
-      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center">
-        <!-- Column 1: Store Locator -->
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-          <i class="fas fa-store text-4xl"></i>
-          <h3 class="text-xl font-bold mt-2">Store Locator</h3>
-          <p class="mt-2">Find Valvoline Tires near you.</p>
-        </div>
-
-        <!-- Column 2: Valvoline + Tires Club -->
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-          <i class="fas fa-gem text-4xl"></i>
-          <h3 class="text-xl font-bold mt-2">Valvoline + Tires Club</h3>
-          <p class="mt-2">Join the Valvoline club to gain exclusive rewards and discounts.</p>
-        </div>
-
-        <!-- Column 3: Valvoline + Tires Foundation -->
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
-          <i class="fas fa-heart text-4xl"></i>
-          <h3 class="text-xl font-bold mt-2">Valvoline + Tires Foundation</h3>
-          <p class="mt-2">Help us through your donations to our charitable causes.</p>
-        </div>
-      </div>
-    </section>
-
     <!-- Three-Column Footer-Like Section -->
-    <section class="bg-[#333333] text-white py-16">
+    <section class="bg-[#1c1c1c] text-white py-16">
       <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
         <!-- Column 1: Location -->
         <div class="text-left">
@@ -416,7 +462,7 @@
     </section>
 
     <!-- Single-Line Footer Notice -->
-    <section class="bg-[#004990] py-10">
+    <section class="bg-black py-10">
       <div class="container mx-auto text-center text-black text-sm text-white">
         ©2025 Valvoline Express Care. By continuing, you agree to our
         <a href="#" class="underline">Terms of Use</a> and <a href="#" class="underline">Privacy Policy</a>
